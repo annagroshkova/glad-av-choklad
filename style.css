@@ -81,7 +81,7 @@ body {
 
 .hero__heading {
     position: absolute;
-    left: 10vw;
+    left: 8vw;
     bottom: 30vh;
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 80px 80px rgba(0, 0, 0, 0.4);
@@ -334,6 +334,7 @@ body {
     }
 
     .hero__heading span {
+        left: 6vw;
         letter-spacing: 2px;
     }
 
