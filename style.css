@@ -124,7 +124,7 @@ body {
 
 .hero__text-block {
     margin-inline: 10vw;
-    margin-bottom: 25vh;
+    margin-bottom: 30vh;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.4);
