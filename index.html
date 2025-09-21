@@ -10,9 +10,13 @@
     </head>
     <body>
         <nav id="navbar">
-            <img src="assets/glad_av_choklad_logo_white.png" class="logo" />
+            <img
+                src="assets/glad_av_choklad_logo_white.png"
+                alt="Glad av choklad vit logotyp"
+                class="logo"
+            />
 
-            <!-- Hidden checkbox -->
+            <!-- hamburger -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle" />
             <label for="menu-toggle" class="hamburger">
                 <span></span>
@@ -29,11 +33,17 @@
         <section id="main">
             <div id="hero">
                 <div class="hero__text-block">
-                    <h1 class="hero__heading"><span>Exklusiva</span> <span>handgjorda praliner</span></h1>
+                    <h1 class="hero__heading">
+                        <span>Exklusiva</span> <span>handgjorda praliner</span>
+                    </h1>
                 </div>
             </div>
             <div id="about">
-                <img class="about__image" src="assets/sarah_hellstrom.jpg" />
+                <img
+                    class="about__image"
+                    src="assets/sarah_hellstrom.jpg"
+                    alt="Konditoren Sarah Hellström"
+                />
 
                 <h2 class="about__title">Möt konditoren</h2>
                 <p class="about__description">
@@ -56,6 +66,7 @@
                             <img
                                 class="products__item-image"
                                 src="assets/products/cherry_pannacotta.png"
+                                alt="chokladpralin cherry pannacotta"
                             />
                             <p class="products__item-flavours">
                                 körsbär pannacotta
@@ -67,6 +78,7 @@
                             <img
                                 class="products__item-image"
                                 src="assets/products/pumpa creme_muskatnot_rorsocker.png"
+                                alt="chokladpralin med pumpa och muskatnöt"
                             />
                             <p class="products__item-flavours">
                                 pumpa muskatnöt rörsocker
@@ -78,6 +90,7 @@
                             <img
                                 class="products__item-image"
                                 src="assets/products/hallon_mork tryffel.png"
+                                alt="chokladpralin med hallon och mörk tryffel"
                             />
                             <p class="products__item-flavours">
                                 hallon mörk tryffel
@@ -89,6 +102,7 @@
                             <img
                                 class="products__item-image"
                                 src="assets/products/chokladkola_espresso_kaffebonor.png"
+                                alt="chokladpralin med kaffe"
                             />
                             <p class="products__item-flavours">
                                 chokladkola espresso kaffebönor kross
@@ -100,18 +114,19 @@
                             <img
                                 class="products__item-image"
                                 src="assets/products/lavendel_vit choklad.png"
+                                alt="chokladpralin med lavendel och vit choklad"
                             />
                             <p class="products__item-flavours">
                                 lavendel vit choklad
                             </p>
                             <p class="products__item-price">120 kr</p>
                         </div>
-
                         <div class="products__item">
                             <h3 class="products__item-name">Rovaniemi</h3>
                             <img
                                 class="products__item-image"
                                 src="assets/products/saffrankola_bryntsmor.png"
+                                alt="chokladpralin men saffran och brynt smör"
                             />
                             <p class="products__item-flavours">
                                 saffranskola brynt smör
@@ -123,6 +138,7 @@
                             <img
                                 class="products__item-image"
                                 src="assets/products/lakrits_plommongele_ingefara.png"
+                                alt="chokladpralin med lakrits, plommon och ingefära"
                             />
                             <p class="products__item-flavours">
                                 lakritsrot plommongelé ingefära
@@ -134,6 +150,7 @@
                             <img
                                 class="products__item-image"
                                 src="assets/products/tomat_svart peppar.png"
+                                alt="chokladpralin men tomat och svart peppar"
                             />
                             <p class="products__item-flavours">
                                 tomat svart peppar
@@ -145,6 +162,7 @@
                             <img
                                 class="products__item-image"
                                 src="assets/products/viol_citron_mynta.png"
+                                alt="chokladpralin med viol och citron smak"
                             />
                             <p class="products__item-flavours">
                                 viol citron mynta
@@ -183,9 +201,17 @@
             <img
                 class="footer__logo"
                 src="assets/glad_av_choklad_logo_white.png"
+                alt="Glad av choklad vit logotyp"
             />
         </section>
 
-        <script src="script.js"></script>
+        <script>
+            function lockHeroHeight() {
+                const hero = document.querySelector('#hero')
+                hero.style.height = `${window.screen.height}px`
+            }
+
+            window.addEventListener('load', lockHeroHeight)
+        </script>
     </body>
 </html>
