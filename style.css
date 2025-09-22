@@ -118,7 +118,7 @@ body {
     justify-self: start;
     align-self: end;
     font-size: 2.375rem;
-    font-weight: 400;
+    font-weight: 600;
     grid-area: title;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .products__title {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2.375rem;
     align-self: flex-start;
     margin-bottom: 0.75rem;
@@ -188,7 +188,7 @@ body {
 }
 
 .products__item-name {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -199,6 +199,7 @@ body {
 
 .products__item-price {
     font-size: 18px;
+    font-weight: 600;
 }
 
 .products__item-image {
@@ -371,10 +372,6 @@ body {
         grid-template-columns: 1fr;
         gap: 2.5rem;
         padding: 2.2rem 0.75rem;
-    }
-
-    .products__item-flavours {
-        font-size: 14px;
     }
 
     .products__item-price {
